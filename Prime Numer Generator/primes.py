@@ -35,5 +35,4 @@ class PrimeGenerator:
         for each in range(2, integer):
             if integer % each == 0:
                 return False
-            else:
-                return True
+        return True
