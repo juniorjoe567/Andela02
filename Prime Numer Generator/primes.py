@@ -8,7 +8,10 @@ class PrimeGenerator:
         # Check for non-integer
         if not isinstance(self.number, int):
             return "Input should be an integer"
-        
+
+        # Check for negative integer
+        if self.number < 0:
+            return 'Input should be a positive integer'
         primes_list = []
         
         # Add the number to the list if it is a prime number
