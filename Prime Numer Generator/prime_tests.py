@@ -14,5 +14,11 @@ class PrimeGeneratorTests(unittest.TestCase):
 
     """ Testing for one """
     def test_one(self):
-        self.assertEqual(PrimeGenerators(1).prime_generator(), "One is not prime")
-        
+        self.assertEqual(PrimeGenerator(1).prime_generator(), "One is not prime")
+
+    """ Testing for a non-integer """
+    def test_non_integer(self):
+        self.assertEqual(PrimeGenerator("test").prime_generator(), "Input should be an integer")
+        self.assertEqual(PrimeGenerator([1,2,3]).prime_generator(), "Input should be an integer")
+
+    
