@@ -25,3 +25,6 @@ class PrimeGeneratorTests(unittest.TestCase):
     def test_negative(self):
         self.assertEqual(PrimeGenerator(-1).prime_generator(), "Input should be a positive integer")
         self.assertEqual(PrimeGenerator(-50).prime_generator(), "Input should be a positive integer")
+
+if __name__ == '__main__':
+    unittest.main()
