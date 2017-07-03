@@ -21,4 +21,7 @@ class PrimeGeneratorTests(unittest.TestCase):
         self.assertEqual(PrimeGenerator("test").prime_generator(), "Input should be an integer")
         self.assertEqual(PrimeGenerator([1,2,3]).prime_generator(), "Input should be an integer")
 
-    
+    """ Testing for negative integers """
+    def test_negative(self):
+        self.assertEqual(PrimeGenerator(-1).prime_generator(), "Input should be a positive integer")
+        self.assertEqual(PrimeGenerator(-50).prime_generator(), "Input should be a positive integer")
