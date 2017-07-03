@@ -5,6 +5,10 @@ class PrimeGenerator:
         self.number = number
 
     def prime_generator(self):
+        # Check for non-integer
+        if not isinstance(self.number, int):
+            return "Input should be an integer"
+        
         primes_list = []
         
         # Add the number to the list if it is a prime number
