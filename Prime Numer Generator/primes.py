@@ -23,12 +23,8 @@ class PrimeGenerator:
         
         primes_list = []
         
-        # Add the number to the list if it is a prime number
-        for integer in range(2, self.number + 1):
-            if self.is_prime(integer):
-                primes_list.append(integer)
-
-        return primes_list
+        # Add a number to a list if it is a prime number and return the list
+        return [integer for integer in range(2, self.number + 1) if self.is_prime(integer)]
 
     """ Takes in an integer and returns true if it is a prime number """
     def is_prime(self, integer):
