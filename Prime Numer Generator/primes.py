@@ -12,6 +12,15 @@ class PrimeGenerator:
         # Check for negative integer
         if self.number < 0:
             return 'Input should be a positive integer'
+
+        # Check for one
+        if self.number == 1:
+            return 'One is not prime'
+
+        # Check for zero
+        if self.number == 0:
+            return 'Zero is not prime'
+        
         primes_list = []
         
         # Add the number to the list if it is a prime number
