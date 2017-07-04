@@ -54,6 +54,7 @@ class Nokia(MobilePhone):
 class SamsungS5(Samsung):
     def __init__(self):
         self.brand = 'Galaxy S5'
+        super(SamsungS5, self).__init__(self.brand)
 
     def readFingerprint(self):
         print('Authorized! Fingerprint matches')
