@@ -1,5 +1,4 @@
 import unittest
-#import mobile
 from mobile import MobilePhone, Samsung, Nokia, SamsungS5
 
 class MobilePhoneTests(unittest.TestCase):
@@ -21,7 +20,7 @@ class MobilePhoneTests(unittest.TestCase):
     """ Test inheritance """
     def test_inheritance(self):
         samsung_s5 = SamsungS5()
-        assertEqual(samsung_s5.getIMEIcode(), 'SAMS123455667', msg='IMEI should be SAMS123455667')
+        self.assertEqual(samsung_s5.getIMEIcode(), 'SAMS123455667', msg='IMEI should be SAMS123455667')
 
 if __name__ == '__main__':
     unittest.main()
