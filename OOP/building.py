@@ -31,7 +31,7 @@ class SkyScrapper(Building):
 
     def wash_windows(floors):
         print('Hiring labour to wash windows on {} floors'
-              .format(floors if floors <= self.floors) else self.floors)
+              .format(floors if floors <= self.floors else self.floors))
 
 class Bungalow(Building):
     """ A residential bungalow """
