@@ -101,3 +101,11 @@ ul {
     float: left;
     margin-left: 5px;
 }
+
+input {
+    width: inherit;
+}
+
+#new_to_twitter {
+    color: rgb(102, 117, 127);
+}
