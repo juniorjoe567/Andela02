@@ -113,6 +113,7 @@ input {
     width: inherit;
     border: 1px solid rgb(102, 117, 127);
     border-radius: 2px;
+    padding: 0 5px 0 5px;
 }
 
 #new_to_twitter {
