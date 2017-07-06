@@ -5,6 +5,9 @@ body {
     overflow-y: scroll;
     background: rgb(230, 236, 240);
     margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url("EU_4.jpg");
+    background-size: 100% 100%;
 }
 
 div {
@@ -21,6 +24,8 @@ div {
     width: 85%;
     height: inherit;
     margin: 0 auto;
+    padding: 15px;
+    color: rgb(102, 117, 127);
 }
 
 .left {
@@ -45,12 +50,12 @@ ul {
 .header_links {
     height: 45px;
     padding: 0px 15px;
-    margin-top: 15px;
+    font-weight: bold;
 }
 
 #body_content {
     width: 100%;
-    background: rgb(0, 0, 0);
+    padding-top: 150px;
 }
 
 #content {
@@ -58,13 +63,13 @@ ul {
     height: 410px;
     margin: auto;
     bottom: 60px;
-    position: absolute;
 }
 
 #welcome {
     height: inherit;
     float: left;
     width: 50%;
+    color: white;
 }
 
 #login {
@@ -94,4 +99,5 @@ ul {
 
 #footer>ul>li {
     float: left;
+    margin-left: 5px;
 }
