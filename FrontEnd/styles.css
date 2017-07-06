@@ -74,6 +74,7 @@ ul {
 
 #login {
     border: 1px solid rgb(225, 232, 237);
+    border-radius: 2px;
     background: white;
     width: 300px;
     float: right;
@@ -83,6 +84,7 @@ ul {
 
 #new_to_twitter {
     border: 1px solid rgb(225, 232, 237);
+    border-radius: 2px;
     background: white;
     width: 300px;
     float: right;
@@ -91,21 +93,48 @@ ul {
 
 #footer {
     font-size: 12px;
-    position: absolute;
     text-align: center;
     width: 100%;
     bottom: 30px;
+    position: relative;
+    margin: auto;
 }
 
 #footer>ul>li {
     float: left;
-    margin-left: 5px;
+    margin-left: 10px;
+}
+
+#footer>ul>li>a {
+    color: white;
 }
 
 input {
     width: inherit;
+    border: 1px solid rgb(102, 117, 127);
+    border-radius: 2px;
 }
 
 #new_to_twitter {
     color: rgb(102, 117, 127);
+}
+
+button {
+    border: 1px solid rgb(29, 161, 242);
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+#btn_signup {
+    background-color: rgb(29, 161, 242);
+    color: white;
+}
+
+#btn_login {
+    background-color: white;
+    color: rgb(29, 161, 242);
+}
+
+a {
+    text-decoration: none;
 }
